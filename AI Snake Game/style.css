@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+body.light {
+  background: linear-gradient(135deg, #f0f8ff, #d4f0ff);
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px #00ffa3;
+}
+
+.menu {
+  text-align: center;
+}
+
+button {
+  background: #d0b057;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+  margin: 8px;
+  font-size: 1.0rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 0 10px #ffd54f;
+}
+
+button:hover {
+  background:#f4b400;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px #00ffa3aa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-canvas {
+  background: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ff7eaa inset;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#score-board {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00ff7e;
+  text-shadow: 0 0 5px #00ff7eaa;
+}
+
+#info {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 12px;
+}
